@@ -128,6 +128,19 @@ function loadObjectHandlers() {
     $('#opacity').off('input').on('input', function () {
         setValue("opacity", parseFloat($(this).val() / 100))
     })
+
+    $('#reset-scale').off('click').on('click', function () {
+        setValue("scaleX", 1)
+        setValue("scaleY", 1)
+    })
+
+    $('#reset-rotation').off('click').on('click', function () {
+        if (canvas.getActiveObject() != null) {
+            var activeText = canvas.getActiveObject()
+            activeText.rotate(0)
+            canvas.renderAll()
+        }
+    })
 }
 
 /*****************************

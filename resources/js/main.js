@@ -55,8 +55,8 @@ function processMeme(memeInfo) {
             opacity: parseFloat($('#opacity').val() / 100),
         })
         
-        text.scaleToWidth(canvas.width / 2)
-        $('#scale').val(text.scaleX)
+        // text.scaleToWidth(canvas.width / 2)
+        // $('#scale').val(text.scaleX)
 
         canvas.add(text).setActiveObject(text);
         loadFont(text.fontFamily)

@@ -98,7 +98,7 @@
                                     <option value="Arial">Arial</option>
                                     <option value="Arial Black">Arial Black</option>
                                     <option value="Comic Sans Ms">Comic Sans Ms</option>
-                                    <option value="Impact">Impact</option>
+                                    <option value="Impact" selected>Impact</option>
                                     <option value="Times New Roman">Times New Roman</option>
                                     <option value="Trebuchet MS">Trebuchet MS</option>
                                 </optgroup>
@@ -110,7 +110,7 @@
                         </div>
                         <div class="form-group col-5 col-sm-6 col-md-5 col-lg-3">
                             <label for="font-size">Font Size: </label>
-                            <input class="form-control text-method" type="number" value="150" id="font-size">
+                            <input class="form-control text-method" type="number" value="60" id="font-size">
                         </div>
                         <div class="form-group col-6 col-lg-4">
                             <label for="font-size">Style: </label>
@@ -182,6 +182,14 @@
                     <div class="form-group mb-4">
                         <label for="opacity">Opacity:</label>
                         <input type="range" class="form-control-range" id="opacity" min="0" max="100" value="100">
+                    </div>
+                    <div class="form-group form-row add-btns pb-3">
+                        <div class="col-auto">
+                            <button class="btn btn-warning" id="reset-scale">Reset Scale</button>
+                        </div>
+                        <div class="col-auto">
+                            <button class="btn btn-warning" id="reset-rotation">Reset Rotation</button>
+                        </div>
                     </div>
                     <div class="form-group form-row add-btns pb-3">
                         <div class="col-auto">
