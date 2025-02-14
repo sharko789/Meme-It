@@ -1,0 +1,14 @@
+services:
+  meme-it:
+    container_name: meme-it
+    expose:
+      - 80
+    volumes:
+      - .:/usr/share/nginx/html:ro
+    image: nginx:latest
+
+networks:
+  default:
+    name: nginx_network
+    external: true
+
