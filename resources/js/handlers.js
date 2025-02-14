@@ -128,6 +128,32 @@ function loadObjectHandlers() {
     $('#opacity').off('input').on('input', function () {
         setValue("opacity", parseFloat($(this).val() / 100))
     })
+
+    $('#rotate-right').off('click').on('click', function () {
+        if (canvas.getActiveObject() != null) {
+            var activeText = canvas.getActiveObject()
+            var currentAngle = activeText.angle
+            activeText.rotate(currentAngle + 90)
+            canvas.renderAll()
+        }
+    })
+
+    $('#rotate-left').off('click').on('click', function () {
+        if (canvas.getActiveObject() != null) {
+            var activeText = canvas.getActiveObject()
+            var currentAngle = activeText.angle
+            activeText.rotate(currentAngle - 90)
+            canvas.renderAll()
+        }
+    })
+
+    $('#reset-rotation').off('click').on('click', function () {
+        if (canvas.getActiveObject() != null) {
+            var activeText = canvas.getActiveObject()
+            activeText.rotate(0)
+            canvas.renderAll()
+        }
+    })
 }
 
 /*****************************

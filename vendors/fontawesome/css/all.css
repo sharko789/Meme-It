@@ -1644,6 +1644,12 @@ readers do not read off random characters that represent icons */
 .fa-fill-drip:before {
   content: "\f576"; }
 
+.fa-rotate-right:before {
+  content: "\f2f9"; }
+
+.fa-rotate-left:before {
+  content: "\f2ea"; }
+
 .fa-film:before {
   content: "\f008"; }
 
