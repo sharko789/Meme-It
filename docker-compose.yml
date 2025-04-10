@@ -4,7 +4,7 @@ services:
     expose:
       - 80
     volumes:
-      - .:/usr/share/nginx/html:ro
+      - ./www:/usr/share/nginx/html:ro
     image: nginx:latest
 
 networks:
