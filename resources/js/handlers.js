@@ -154,6 +154,11 @@ function loadObjectHandlers() {
             canvas.renderAll()
         }
     })
+    
+    $('#reset-scale').off('click').on('click', function () {
+        setValue("scaleX", 1)
+        setValue("scaleY", 1)
+    })
 }
 
 /*****************************
